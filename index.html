@@ -9,7 +9,7 @@
 </head>
 
 <body class="p-2">
-    <nav class="navbar navbar-expand-lg bg-secondary">
+    <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="#">Amazon</a>
@@ -23,8 +23,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown me-2">
-                        <select class="form-select" id='brand' aria-label="Default select example"
-                            onchange="searchBrand(event)">
+                        <select class="form-select" name="brand" id='brand' aria-label="Default select example"
+                            onchange="filterShoes(event)">
                             <option selected value="">Brand</option>
                             <option value="Nike">Nike</option>
                             <option value="Adidas">Adidas</option>
@@ -34,9 +34,9 @@
                     </li>
 
                     <li class="nav-item dropdown me-2">
-                        <select class="form-select" id="color" aria-label="Default select example"
-                            onchange="searchColor(event)">
-                            <option selected>Color</option>
+                        <select class="form-select" name="color" id="color" aria-label="Default select example"
+                            onchange="filterShoes(event)">
+                            <option selected value="">Color</option>
                             <option value="Black">Black</option>
                             <option value="Blue">Blue</option>
                             <option value="White">White</option>
@@ -51,20 +51,20 @@
                     </li>
 
                     <li class="nav-item dropdown me-2">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Size</option>
-                            <option value="40">40</option>
-                            <option value="41">41</option>
-                            <option value="42">42</option>
-                            <option value="43">43</option>
-                            <option value="44">44</option>
-                            <option value="45">45</option>
+                        <select class="form-select" name="size" id="size" aria-label="Default select example"
+                            onchange="filterShoes(event)">
+                            <option selected value="">Size</option>
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
                         </select>
                     </li>
 
                     <li class="nav-item dropdown me-2">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Price</option>
+                        <select class="form-select" name="price" id="price" aria-label="Default select example"
+                            onchange="filterShoes(event)">
+                            <option selected value="">Price</option>
+                            <option value="$0-$100">$0-$100</option>
                             <option value="$100-$200">$100-$200</option>
                             <option value="$200-$300">$200-$300</option>
                             <option value="$300-$400">$300-$400</option>
