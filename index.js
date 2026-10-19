@@ -307,7 +307,7 @@ const filterShoes = (event) => {
     const brand = filter.brand === "" || shoe.brand === filter.brand;
     const color = filter.color === "" || shoe.color === filter.color;
     const size = filter.size === "" || shoe.size === filter.size;
-    const price = filter.price === "" || (shoe.price >= parseFloat(filter.price.split('-')[0].replace('$', '')) && shoe.price <= parseFloat(filter.price.split('-')[1].replace('$', '')));
+    const price = filter.price === "" || shoe.price === filter.price;
 
     return brand && color && size && price;
   });
